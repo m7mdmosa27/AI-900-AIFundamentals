@@ -4,12 +4,13 @@ $endpoint="YOUR_ENDPOINT"
 
 # Code to call Computer Vision service for image analysis
 $img_file = "store-camera-1.jpg"
-if ($args.count -gt 0 -And $args[0] -in ("store-camera-1.jpg", "store-camera-2.jpg", "store-camera-3.jpg", "store-camera-4.jpg"))
+if ($args.count -gt 0 -And $args[0] -in ("store-camera-1.jpg", "store-camera-2.jpg", "store-camera-3.jpg", "store-camera-4.jpg", "website.jpg", "subhome-ai.jpg
+", "free-images.jpg"))
 {
     $img_file = $args[0]
 }
 
-$img = "https://raw.githubusercontent.com/MicrosoftLearning/AI-900-AIFundamentals/main/data/vision/$img_file"
+$img = "https://raw.githubusercontent.com/m7mdmosa27/AI-900-AIFundamentals/main/data/vision/$img_file"
 
 $headers = @{}
 $headers.Add( "Ocp-Apim-Subscription-Key", $key )
